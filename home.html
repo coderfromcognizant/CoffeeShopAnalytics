@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://assets.adobedtm.com/236ca7d75265/e96555aea3b7/launch-c7db0ccba102-development.min.js" async></script>
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <ul class="nav-list" id="nav-list">
+            <li class="nav-item" id="nav-home"><a href="#home" class="nav-link" id="nav-link-home">Home</a></li>
+            <li class="nav-item" id="nav-about"><a href="#about" class="nav-link" id="nav-link-about">About Us</a></li>
+            <li class="nav-item" id="nav-products"><a href="#products" class="nav-link" id="nav-link-products">Products</a></li>
+            <li class="nav-item" id="nav-blog"><a href="#blog" class="nav-link" id="nav-link-blog">Blog</a></li>
+            <li class="nav-item" id="nav-contact"><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+            <li class="nav-item" id="nav-login"><a href="#" class="nav-link" id="nav-link-login">Login</a></li>
+        </ul>
+    </nav>
+    <header class="hero-header" id="hero-header">
+        <div class="hero" id="hero">
+            <h1 class="hero-title" id="hero-title">Welcome to Our Coffee Shop</h1>
+            <p class="hero-subtitle" id="hero-subtitle">Experience the best coffee in town</p>
+        </div>
+    </header>
+    <section class="section" id="about">
+        <h2 class="section-title" id="about-title">About Us</h2>
+        <p class="section-description" id="about-description">We are dedicated to serving the finest coffee made from the highest quality beans. Our shop is a cozy place for coffee lovers to relax and enjoy their favorite brew.</p>
+    </section>
+    <section class="section" id="products">
+        <h2 class="section-title" id="products-title">Our Products</h2>
+        <div class="product-grid" id="product-grid">
+            <a href="#" class="product" id="product-espresso">
+                <h3 class="product-title" id="product-title-espresso">Espresso</h3>
+                <p class="product-description" id="product-description-espresso">A strong and full-bodied coffee.</p>
+            </a>
+            <a href="#" class="product" id="product-latte">
+                <h3 class="product-title" id="product-title-latte">Latte</h3>
+                <p class="product-description" id="product-description-latte">A smooth and creamy coffee.</p>
+            </a>
+            <a href="#" class="product" id="product-cappuccino">
+                <h3 class="product-title" id="product-title-cappuccino">Cappuccino</h3>
+                <p class="product-description" id="product-description-cappuccino">A perfect balance of coffee and milk foam.</p>
+            </a>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+    <section class="section" id="blog">
+        <h2 class="section-title" id="blog-title">Our Blog</h2>
+        <div class="blog-grid" id="blog-grid">
+            <a href="#" class="blog-post" id="blog-post-1">
+                <h3 class="blog-title" id="blog-title-1">Brewing the Perfect Cup</h3>
+                <p class="blog-description" id="blog-description-1">Learn how to brew coffee like a pro with our tips and tricks.</p>
+            </a>
+            <a href="#" class="blog-post" id="blog-post-2">
+                <h3 class="blog-title" id="blog-title-2">History of Coffee</h3>
+                <p class="blog-description" id="blog-description-2">Discover the rich history of coffee and its journey to becoming a global staple.</p>
+            </a>
+            <!-- Add more blog posts as needed -->
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <h2 class="section-title" id="contact-title">Contact Us</h2>
+        <form class="contact-form" id="contact-form" action="#" method="POST">
+            <label for="first-name" class="form-label">First Name:</label>
+            <input type="text" id="first-name" name="first-name" class="form-input" required>
+            <label for="last-name" class="form-label">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" class="form-input" required>
+            <label for="address" class="form-label">Address:</label>
+            <input type="text" id="address" name="address" class="form-input" required>
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" class="form-input" required>
+            <label for="pincode" class="form-label">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" class="form-input" required>
+            <label for="city" class="form-label">City:</label>
+            <input type="text" id="city" name="city" class="form-input" required>
+            <button type="submit" class="form-button" id="form-button-submit">Submit</button>
+        </form>
+    </section>
+    <footer class="footer" id="footer">
+        <p class="footer-text" id="footer-text">&copy; 2024 Coffee Shop. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted successfully!');
+            window.location.reload();
+        });
+
+        document.getElementById('nav-link-login').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.reload();
+        });
+    </script>
+</body>
+</html>
